@@ -1,0 +1,6 @@
+---
+title: First Post
+date: 2020-08-07
+---
+
+That is all.
