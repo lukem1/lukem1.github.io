@@ -17,8 +17,12 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: projects_url
+  projects: https://github.com/lukem1
 
+# Home Message
+homemsg:
+  text: "Welcome!"
+  sebtext: "My CSCI 362 Blog can be found [here](/archive/) under Writing"
 
 # Links to your social media accounts.
 # The keys should correspond to Fontawesome icon names
