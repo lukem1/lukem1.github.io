@@ -28,12 +28,16 @@ homemsg:
 # The keys should correspond to Fontawesome icon names
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
-social_links:
-  github: https://github.com/lukem1
+#social_links:
+#  github: https://github.com/lukem1
   #twitter: /
   #linkedin: /
-  mail: mailto:mcguirel@g.cofc.edu
+#  mail: mailto:mcguirel@g.cofc.edu
 
+footersocials:
+  github: "https://github.com/lukem1"
+  mail: "mailto:mcguirel@g.cofc.edu"
+  
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
 tags_overview: false
