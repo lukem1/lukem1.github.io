@@ -74,7 +74,7 @@ practice of the profession.
 
 # To help counter terrorism, many countries are planning or have developed computer systems that track large numbers of their citizens and their actions.  Clearly, this has privacy implications.  Discuss the ethics of working on the development of this type of system.
 
-I could spend days talking about this issue, but i'll keep it short. I strongly belive that systems like these pose existential threats to deomocracy, civil liberties, and human rights. In recent times I feel this has become very clear.
+I could spend days talking about this issue, but I'll keep it short. I strongly belive that systems like these pose existential threats to deomocracy, civil liberties, and human rights. In recent times I feel this has become very clear.
 
 Througout the last few months alone US tech companies have recieved criticism for selling surveillence software to the US government amidst nationwide protests over police violence, and public backlash led many of them to place "pauses" on the sales of the tools ([Source](https://www.npr.org/2020/06/10/874418013/amazon-halts-police-use-of-its-facial-recognition-technology)). 
 
