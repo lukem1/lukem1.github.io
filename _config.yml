@@ -11,6 +11,13 @@ author: lukem1
 language: en
 timezone: ''
 
+# Homepage Markdown
+homemd: |
+	# Welcome!
+	My CSCI 362 Blog can be found under [Writing](/archives/)
+	
+	Currently that's all there is here, but more will be added in the future.
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://lukem1.github.io

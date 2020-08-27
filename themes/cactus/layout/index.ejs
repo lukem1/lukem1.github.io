@@ -2,6 +2,9 @@
   <% if (config.description) { %>
     <%- markdown(config.description) %>
   <% } %>
+  <% if (config.homemd) { %>
+    <%- markdown(config.homemd) %>
+  <% } %>
   <% if (theme.social_links) { %>
     <p>
       <%= __('index.find_me_on') %>
