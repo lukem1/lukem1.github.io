@@ -15,7 +15,7 @@ timezone: ''
 homemd: |
 	# Welcome!
 	My CSCI 362 Blog can be found under [Writing](/archives/).
-	
+
 	Currently that's all there is here, but more will be added in the future.
 
 # URL
@@ -50,7 +50,7 @@ filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
-future: true
+future: false # Do not display posts before the post date
 highlight:
   enable: true
   line_number: true
