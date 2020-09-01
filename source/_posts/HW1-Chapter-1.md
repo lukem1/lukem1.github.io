@@ -4,7 +4,7 @@ date: 2020-08-26 21:54:35
 tags: CSCI362
 ---
 
-# What are the four important attributes that all professional software should possess?  Suggest four other attributes that may sometimes be significant.
+## What are the four important attributes that all professional software should possess?  Suggest four other attributes that may sometimes be significant.
 
 It is said that all professional software should posess the following four attributes: Maintainability, Acceptability, Dependability/Security, and Efficiency.
 
@@ -15,11 +15,11 @@ Additionally, four other attributes that I feel are significant are:
 - Correctness: When developing systems to handle tasks of high importance (e.g. banking, scientific research, electronic voting).
 - Trust: When users require a high degree of confidence in the corectness and saftey of a system, can be created with open source, independent audits, etc.
 
-# Discuss whether professional software engineers should be licensed in the same way as doctors or lawyers.
+## Discuss whether professional software engineers should be licensed in the same way as doctors or lawyers.
 
 To put it simply.. I do not belive that software engineers should be licensed in the same way that doctors or lawyers are licensed today. But I do feel that this is a discussion worth having.
 
-It is evident that doctors and lawyers both require licenses due to the importance of their work and their ability to directly impact peoples lives. 
+It is evident that doctors and lawyers both require licenses due to the importance of their work and their ability to directly impact peoples lives.
 
 Simillarly, it is evident that nowadays many software engineers build and interact with systems that perform very important tasks, and can have simillarly significant impacts upon people at both an individual and societal level.
 
@@ -29,7 +29,7 @@ Unlike doctors and lawyers, software engineers do not exclusively perform import
 
 In conclusion, while I do understand the concerns which may encourage people to consider the licensing software engineers simillarly to doctors, I feel that further licensing should only be considered in cases where engineers are working on critical systems rather than across the entire field.
 
-# For each of the clauses in the ACM/IEEE Code of Ethics shown in Figure 1.4, propose an appropriate example that illustrates that clause.
+## For each of the clauses in the ACM/IEEE Code of Ethics shown in Figure 1.4, propose an appropriate example that illustrates that clause.
 
 1. PUBLIC — Software engineers shall act consistently with the public interest.
 
@@ -72,16 +72,14 @@ practice of the profession.
 
 - Always be learning and improving your own skills.
 
-# To help counter terrorism, many countries are planning or have developed computer systems that track large numbers of their citizens and their actions.  Clearly, this has privacy implications.  Discuss the ethics of working on the development of this type of system.
+## To help counter terrorism, many countries are planning or have developed computer systems that track large numbers of their citizens and their actions.  Clearly, this has privacy implications.  Discuss the ethics of working on the development of this type of system.
 
 I could spend days talking about this issue, but I'll keep it short. I strongly belive that systems like these pose existential threats to deomocracy, civil liberties, and human rights. In recent times I feel this has become very clear.
 
-Througout the last few months alone US tech companies have recieved criticism for selling surveillence software to the US government amidst nationwide protests over police violence, and public backlash led many of them to place "pauses" on the sales of the tools ([Source](https://www.npr.org/2020/06/10/874418013/amazon-halts-police-use-of-its-facial-recognition-technology)). 
+Througout the last few months alone US tech companies have recieved criticism for selling surveillence software to the US government amidst nationwide protests over police violence, and public backlash led many of them to place "pauses" on the sales of the tools ([Source](https://www.npr.org/2020/06/10/874418013/amazon-halts-police-use-of-its-facial-recognition-technology)).
 
 Additionally the US government has recently been caught purcashing location data on US citizens from private companies to bypass judicial oversight ([Source](https://www.vice.com/en_us/article/jgxk3g/secret-service-phone-location-data-babel-street)).
 
 These two examples alone highlight the moral issues associated with the development of surveillence software and demonstrate that this software is absoloutly not in the public intrest.
 
-Due to these issues I belive that it is both highly unethical and immoral to help in the development of these systems. 
-
-
+Due to these issues I belive that it is both highly unethical and immoral to help in the development of these systems.
