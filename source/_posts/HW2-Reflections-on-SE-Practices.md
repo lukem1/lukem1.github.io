@@ -3,11 +3,14 @@ title: 'HW2: Reflections on software engineering practices'
 date: 2020-09-01 04:00:00
 tags: CSCI362
 ---
+# heading 1
 
 test
 
----
+## heading 2
 
+---
+### heading 3
 othertest
 
 ___
