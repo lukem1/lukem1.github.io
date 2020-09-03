@@ -10,7 +10,7 @@ tags: CSCI362
 
 ---
 
-At their core, all architectures for supporting software fault tolerance should be redundant.
+At their core, all architectures for supporting software fault tolerance should be redundant and both hardware and software diverse.
 
 They should be specific, verify correctness, and handle all possible faults.
 
