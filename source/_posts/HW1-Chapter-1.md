@@ -6,7 +6,7 @@ tags: CSCI362
 
 ## 1.3
 
-What are the four important attributes that all professional software should possess?  Suggest four other attributes that may sometimes be significant.
+**What are the four important attributes that all professional software should possess?  Suggest four other attributes that may sometimes be significant.**
 
 ---
 
@@ -21,11 +21,11 @@ Additionally, four other attributes that I feel are significant are:
 
 ## 1.8
 
-Discuss whether professional software engineers should be licensed in the same way as doctors or lawyers.
+**Discuss whether professional software engineers should be licensed in the same way as doctors or lawyers.**
 
 ---
 
-To put it simply.. I do not belive that software engineers should be licensed in the same way that doctors or lawyers are licensed today. But I do feel that this is a discussion worth having.
+To put it simply... I do not belive that software engineers should be licensed in the same way that doctors or lawyers are licensed today. But I do feel that this is a discussion worth having.
 
 It is evident that doctors and lawyers both require licenses due to the importance of their work and their ability to directly impact peoples lives.
 
@@ -39,7 +39,7 @@ In conclusion, while I do understand the concerns which may encourage people to 
 
 ## 1.9
 
-For each of the clauses in the ACM/IEEE Code of Ethics shown in Figure 1.4, propose an appropriate example that illustrates that clause.
+**For each of the clauses in the ACM/IEEE Code of Ethics shown in Figure 1.4, propose an appropriate example that illustrates that clause.**
 
 ---
 
@@ -86,7 +86,7 @@ practice of the profession.
 
 ## 1.10
 
-To help counter terrorism, many countries are planning or have developed computer systems that track large numbers of their citizens and their actions.  Clearly, this has privacy implications.  Discuss the ethics of working on the development of this type of system.
+**To help counter terrorism, many countries are planning or have developed computer systems that track large numbers of their citizens and their actions.  Clearly, this has privacy implications.  Discuss the ethics of working on the development of this type of system.**
 
 ---
 
