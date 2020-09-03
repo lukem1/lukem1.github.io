@@ -1,5 +1,5 @@
 ---
-title: 'HW2: Reflections on software engineering practices'
+title: 'HW2: Reflections on Software Engineering Practices'
 date: 2020-09-01 04:00:00
 tags: CSCI362
 ---
