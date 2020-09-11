@@ -54,11 +54,11 @@ As non-functional requirements are often relate to emergent properties of a syst
 
 **Using your knowledge of how an ATM is used, develop a set of use cases that could serve as a basis for understanding the requirements for an ATM system.**
 
-1. A user needs to withdraw money from a bank account.
+1. Withdraw from Bank: A user needs to withdraw money from a bank account. They enter their account info and pin on a keypad and request an amount of cash. The machine verifies this info, removes the amount from the users account, and returns the cash withdrawn.
 
-2. A user needs to convert credit into cash using a credit card.
+2. Credit to Cash: A user needs to convert credit into cash using a credit card. They swipe their card and enter their pin, then enter an amount to withdraw. The ATM charges the credit provider and returns the amount requested in cash.
 
-3. A user needs to deposit money into a bank account.
+3. Deposit cash to Bank: A user needs to deposit money into a bank account. They enter their account info and pin on a keypad and feed the cash into the machine. The value is counted and added to their account.
 
 ---
 
@@ -66,7 +66,7 @@ As non-functional requirements are often relate to emergent properties of a syst
 
 The analysis of Tire Pressure Management Systems (TPM Systems) in the paper "Security and Privacy Vulnerabilities of In-Car Wireless Networks" demonstrates the value of specifications by revealing some of the dangers of failing to fully consider specifications.
 
-At their core, TMP Systems seemed to result from positive pushes for increased car safety, but as the paper and SPY Car act demonstrate, failures to properly consider security and privacy in the specs led to quite a debacle. 
+At their core, TMP Systems seemed to result from positive pushes for increased car safety, but as the paper and SPY Car act demonstrate, failures to properly consider security and privacy in the specs led to quite a debacle.
 ___
 
 ## References
