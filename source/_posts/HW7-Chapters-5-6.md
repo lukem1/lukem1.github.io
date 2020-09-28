@@ -19,7 +19,7 @@ tags: CSCI362
 ## 5.7
 **Based on your experience with a bank ATM, draw an activity diagram that models the data processing involved when a customer withdraws cash from the machine.**
 
-![5.7 Activity Diagram]()
+![5.7 Activity Diagram](https://raw.githubusercontent.com/lukem1/lukem1.github.io/master/imgs/5_7.png)
 
 ---
 ## 5.8
