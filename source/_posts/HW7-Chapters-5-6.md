@@ -25,7 +25,7 @@ tags: CSCI362
 ## 5.8
 **Draw a sequence diagram for the same system. Explain why you might want to develop both activity and sequence diagrams when modeling the behavior of a system.**
 
-![5.8 Sequence Diagram]()
+![5.8 Sequence Diagram](https://raw.githubusercontent.com/lukem1/lukem1.github.io/master/imgs/5_8.png)
 
 ---
 ## 6.4
