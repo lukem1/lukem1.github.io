@@ -4,7 +4,7 @@ date: 2020-08-26 21:43:01
 tags: CSCI362
 ---
 
-Hello, I'm Luke McGuire.
+Hello, I'm Luke.
 
 I'm a Junior Computer Science major and a member of the cofc Cybersecurity club.
 
