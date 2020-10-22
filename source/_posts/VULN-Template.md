@@ -1,8 +1,8 @@
 ---
 title: 'Title: Subtitle'
-date: 2020-10-19 04:00:00
+date: 2020-10-24 04:00:00
 tags:
-  - Cybersecurity 
+  - Cybersecurity
   - Research
 ---
 ## Summary
