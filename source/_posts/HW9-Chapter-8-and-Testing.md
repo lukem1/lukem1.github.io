@@ -1,5 +1,5 @@
 ---
-title: 'HW9: Chapter 8 and reflections on testing'
+title: 'HW9: Chapter 8 and Reflections on Testing'
 date: 2020-10-01 04:00:00
 tags: CSCI362
 ---
