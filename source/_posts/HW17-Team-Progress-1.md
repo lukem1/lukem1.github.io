@@ -1,11 +1,13 @@
 ---
-title: 'HW16: Chapter 20'
-date: 2020-10-29 04:00:00
+title: 'HW17: Team Progress 1'
+date: 2020-11-05 04:00:00
 tags: CSCI362
 ---
-## 20.10
-**You work for a software company that has developed a system that provides information about consumers and that is used within a SoS by a number of other retail businesses. They pay you for the services used. Discuss the ethics of changing the system interfaces without notice to coerce users into paying higher charges. Consider this question from the point of view of the company’s employees, customers, and shareholders.**
 
-This scenario clearly demonstrates unethical behavior. In essence this practice is equivalent to holding the client's businesses hostage for a ransom.
+At this point in time my team and I have been working on and thinking about our term project for quite some time, and we are pretty pleased with our progress so far.
 
-From the perspective of employees/shareholders, this practice may have short term benefits by increasing profits, but I would expect that many clients would see this practice for what it is and, at the very least, seek to replace this system with another option, or even pursue legal action. This would likely lead to long term damage to the company's reputation and client base.
+We have designed and implemented a significant portion of our testing framework and currently have it in a working state, although we plan to clean it up considerably (especially the output). Additionally we have written 2/5 test case drivers and 10/25 test cases for our framework. Overall we feel pretty confident with our design and plan on getting a lot more work done in the coming weeks.
+
+Although we are happy with our progress there are some challenges we encountered along the way, and at least one more we see on the horizon. These issues all stem from the sheer scale of the open source project we chose to develop our framework for, Moodle. Due to the nature of the Moodle project, much of the code requires a database and a configuration in order to run, which makes our work a bit more difficult as we are trying to make our framework as portable as possible. We have two option in moving forward with this constraint, automating the Moodle install process or avoiding tests which require the database. Currently we are leaning towards avoiding this type of test as we have had no shortage of Moodle components to test that do not require the DB and we are viewing an automated install as an "extra" thing we could do to demonstrate the versatility of our framework if time allows after we have completed the basic project requirements.
+
+As I stated above, I am currently pretty happy with my teams progress and we are hoping our project continues to develop at the current pace.
