@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="21.4What are the commonly used architectural patterns in real-time systems and when are they used? Observe and ReactThis architecture involves using data from sensors to provide information about an e">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HW18: Chapter 21 and Chapter 22">
+<meta property="og:url" content="https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/index.html">
+<meta property="og:site_name" content="Luke&#39;s Blog">
+<meta property="og:description" content="21.4What are the commonly used architectural patterns in real-time systems and when are they used? Observe and ReactThis architecture involves using data from sensors to provide information about an e">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-10T09:00:00.000Z">
+<meta property="article:modified_time" content="2020-11-10T15:08:40.465Z">
+<meta property="article:author" content="lukem1">
+<meta property="article:tag" content="CSCI362">
+<meta name="twitter:card" content="summary">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>HW18: Chapter 21 and Chapter 22</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+      
+<link rel="stylesheet" href="/css/rtl.css">
+
+    
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/lukem1">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2020/11/05/HW17-Team-Progress-1/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&text=HW18: Chapter 21 and Chapter 22"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&is_video=false&description=HW18: Chapter 21 and Chapter 22"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=HW18: Chapter 21 and Chapter 22&body=Check out this article: https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&name=HW18: Chapter 21 and Chapter 22&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&t=HW18: Chapter 21 and Chapter 22"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#21-4"><span class="toc-number">1.</span> <span class="toc-text">21.4</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Observe-and-React"><span class="toc-number">1.0.1.</span> <span class="toc-text">Observe and React</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Environmental-Control"><span class="toc-number">1.0.2.</span> <span class="toc-text">Environmental Control</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Process-Pipeline"><span class="toc-number">1.0.3.</span> <span class="toc-text">Process Pipeline</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#22-6"><span class="toc-number">2.</span> <span class="toc-text">22.6</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        HW18: Chapter 21 and Chapter 22
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Luke's Blog</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2020-11-10T09:00:00.000Z" itemprop="datePublished">2020-11-10</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/CSCI362/" rel="tag">CSCI362</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="21-4"><a href="#21-4" class="headerlink" title="21.4"></a>21.4</h2><p><strong>What are the commonly used architectural patterns in real-time systems and when are they used?</strong></p>
+<h4 id="Observe-and-React"><a href="#Observe-and-React" class="headerlink" title="Observe and React"></a>Observe and React</h4><p>This architecture involves using data from sensors to provide information about an environment as well as detect when certain events occur in order to initiate a response. This pattern is often used when a system is designed to work with a human operator and provide them with information. For example, a security system that sets of an alarm when a break in is detected, or an industrial control system which alerts an operator when something is going wrong and shuts down machinery.</p>
+<h4 id="Environmental-Control"><a href="#Environmental-Control" class="headerlink" title="Environmental Control"></a>Environmental Control</h4><p>This architecture involves using data from sensors to detect to changes in an environment and using actuators to manipulate that environment in response. It is used in systems where direct interactions with the environment are desired, for example, the text describes an anti skid braking system which can detect when wheels begin skidding and adjust the brakes to minimize risk.</p>
+<h4 id="Process-Pipeline"><a href="#Process-Pipeline" class="headerlink" title="Process Pipeline"></a>Process Pipeline</h4><p>This architecture involves transforming data from one representation to another before processing to allow for more efficient data processing. It is often used when sensors collect large amounts of data from the environment and it is either not possible or not necessary to process the data in real time.</p>
+<h2 id="22-6"><a href="#22-6" class="headerlink" title="22.6"></a>22.6</h2><p><strong>Fixed-price contracts, where the contractor bids a fixed price to complete a system development, may be used to move project risk from client to contractor. If anything goes wrong, the contractor has to pay. Suggest how the use of such contracts may increase the likelihood that product risks will arise.</strong></p>
+<p>As has been long established throughout this blog and this course, software projects tend to evolve throughout the software engineering process through means of schedule slippage, requirements changes, or a myriad of other issues which require flexibility. Fixed-price contracts simply do not provide the room for the flexibility that software projects often require, and this can cause issues to be ignored by contractors in order to meet contracts by any means, and this can be a vicious cycle as projects continue and more and more issues are potentially ignored.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/lukem1">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#21-4"><span class="toc-number">1.</span> <span class="toc-text">21.4</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Observe-and-React"><span class="toc-number">1.0.1.</span> <span class="toc-text">Observe and React</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Environmental-Control"><span class="toc-number">1.0.2.</span> <span class="toc-text">Environmental Control</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Process-Pipeline"><span class="toc-number">1.0.3.</span> <span class="toc-text">Process Pipeline</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#22-6"><span class="toc-number">2.</span> <span class="toc-text">22.6</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&text=HW18: Chapter 21 and Chapter 22"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&is_video=false&description=HW18: Chapter 21 and Chapter 22"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=HW18: Chapter 21 and Chapter 22&body=Check out this article: https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&title=HW18: Chapter 21 and Chapter 22"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&name=HW18: Chapter 21 and Chapter 22&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://lukem1.github.io/2020/11/10/HW18-Chapters-21-22/&t=HW18: Chapter 21 and Chapter 22"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2020
+    lukem1
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/lukem1">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+
+    <!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+
+<!-- clipboard -->
+
+  
+<script src="/lib/clipboard/clipboard.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+
+</body>
+</html>
