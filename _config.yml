@@ -9,12 +9,12 @@ description: ''
 keywords:
 author: lukem1
 language: en
-timezone: ''
+timezone: 'America/New_York'
 
 # Homepage Markdown
 homemd: |
 	# Welcome!
-	My CSCI 362 Blog can be found under [Writing](/archives/).
+	My Software Engineering Blog can be found under [Writing](/archives/).
 
 	Currently that's all there is here, but more will be added in the future.
 
