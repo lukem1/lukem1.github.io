@@ -1,5 +1,5 @@
 ---
-title: 'HW17: Team Progress 1'
+title: 'HW17: Team Progress I'
 date: 2020-11-05 04:00:00
 tags: CSCI362
 ---
