@@ -3,7 +3,13 @@ title: 'HW18: Chapter 21 and Chapter 22'
 date: 2020-11-10 04:00:00
 tags: CSCI362
 ---
+
 ## 21.4
+**Explain why an object-oriented approach to software development may not be suitable for real-time systems.**
+
+Real-time systems often need to be as fast as possible in order to perform and respond in real-time, to the point that even a few wasted CPU cycles per operation are significant. In these cases an object-oriented approach is not only time inefficient due to the fact that initializing objects is a relatively heavy operation, but often completely unnecessary. For example, in an emergency car braking system that might need to sample several sensors hundreds of times per second and perform calculations to determine if braking is necessary, initializing new objects to track these values is an unnecessary overhead which could reduce the effectiveness of the system.
+
+## 21.4 (Global Edition)
 **What are the commonly used architectural patterns in real-time systems and when are they used?**
 
 #### Observe and React

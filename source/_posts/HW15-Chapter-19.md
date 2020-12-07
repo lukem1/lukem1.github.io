@@ -4,6 +4,11 @@ date: 2020-10-27 04:00:00
 tags: CSCI362
 ---
 ## 19.3
+**Why is it impossible to infer the emergent properties of a complex system from the properties of the system components?**
+
+Without knowledge of how the system components will interact, it is pretty clear how it is impossible to predict the exact properties of the complex system, as the interactions between the components are what define the emergent properties of the system.
+
+## 19.3 (Global Edition)
 **Complex sociotechnical systems lead to three important characteristics. What are they? Explain each in brief.**
 
 1. They have Emergent Properties

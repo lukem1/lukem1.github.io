@@ -4,6 +4,23 @@ date: 2020-10-13 04:00:00
 tags: CSCI362
 ---
 ## 9.8
+**Briefly describe the three main types of software maintenance. Why is it sometimes difficult to distinguish between them?**
+
+1. Fault Repairs
+
+Fixing bugs/vulnerabilities by correcting coding errors, design errors, or requirement errors.
+
+2. Environmental Adaptation
+
+Adapting the system to new platforms and environments.
+
+3. Functionality Addition
+
+Adding new features to respond to requirement changes.
+
+Sometimes these types of software maintenance are difficult to distinguish as they are often intertwined. For example, when adding features, new faults may be exposed, etc.
+
+## 9.8 (Global Edition)
 **Explain the differences between software reengineering and refactoring**
 
 Refactoring is the process of restructuring existing code to slow degradation through change, without changing the external behavior.
