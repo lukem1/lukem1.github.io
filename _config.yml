@@ -14,9 +14,9 @@ timezone: 'America/New_York'
 # Homepage Markdown
 homemd: |
 	# Welcome!
-	My Software Engineering Blog can be found under [Writing](/archives/).
+	My Software Engineering Blog can be found under [Writing](/tags/CSCI362/).
 
-	Currently that's all there is here, but more will be added in the future.
+	Check out my GitHub page to see what projects I am working on currently.
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
