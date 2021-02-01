@@ -18,7 +18,7 @@ The rest of the article focused upon these steps that had to be taken to ensure 
 
 I found this article to be quite interesting, especially as I myself highly value using and promoting open source software whenever possible, and I agree that there is a huge potential for cost saving and flexibility for any organization that has the opportunity to switch to open source.
 
-# Container Concepts
+### Container Concepts
 
 The second article I read gave a bit of an overview of containerization and why it has become so important in the last few years as well as the relationship between containerization, virtualization, and orchestration.
 
