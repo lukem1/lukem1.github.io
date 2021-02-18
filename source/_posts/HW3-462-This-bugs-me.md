@@ -38,6 +38,10 @@ Steps to Reproduce:
 
 **Bug Triage**
 
+[1.](https://github.com/zulip/zulip/issues/17145)
+
+[2.](https://github.com/zulip/zulip/issues/17202)
+
 ## References
 
 - [Teaching Open Source: Debugging_the_Code](https://quaid.fedorapeople.org/TOS/Practical_Open_Source_Software_Exploration/html/ch-Debugging_the_Code.html)
