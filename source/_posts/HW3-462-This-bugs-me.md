@@ -38,9 +38,9 @@ Steps to Reproduce:
 
 **Bug Triage**
 
-[1.](https://github.com/zulip/zulip/issues/17145)
+[1. Issue 17145](https://github.com/zulip/zulip/issues/17145)
 
-[2.](https://github.com/zulip/zulip/issues/17202)
+[2. Issue 17202](https://github.com/zulip/zulip/issues/17202)
 
 ## References
 
