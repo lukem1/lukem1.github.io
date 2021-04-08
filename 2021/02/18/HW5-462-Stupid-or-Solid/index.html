@@ -14,7 +14,7 @@
 <meta property="og:description" content="Reflections on S.O.L.I.D.The article “From STUPID to SOLID Code” describes what principles to keep in mind to turn STUPID code into SOLID code. These acronyms are defined as follows: STUPID  Singleton">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-02-18T13:00:00.000Z">
-<meta property="article:modified_time" content="2021-04-06T03:03:15.349Z">
+<meta property="article:modified_time" content="2021-04-08T05:54:17.275Z">
 <meta property="article:author" content="lukem1">
 <meta property="article:tag" content="CSCI462">
 <meta name="twitter:card" content="summary">
@@ -155,20 +155,64 @@
     <h2 id="Reflections-on-S-O-L-I-D"><a href="#Reflections-on-S-O-L-I-D" class="headerlink" title="Reflections on S.O.L.I.D."></a>Reflections on S.O.L.I.D.</h2><p>The article “From STUPID to SOLID Code” describes what principles to keep in mind to turn STUPID code into SOLID code. These acronyms are defined as follows:</p>
 <p><strong>STUPID</strong></p>
 <ul>
-<li><strong>S</strong>ingleton</li>
-<li><strong>T</strong>ight Coupling</li>
-<li><strong>U</strong>ntestability</li>
-<li><strong>P</strong>remature Optimization</li>
-<li><strong>I</strong>ndescriptive Naming</li>
-<li><strong>D</strong>uplication</li>
+<li><p><strong>S</strong>ingleton</p>
+<ul>
+<li>Singleton refers to the singleton pattern, which is a design which restricts classes to a single instance. This gives a program a single global state, which the article argues makes testing extremely difficult.</li>
+</ul>
+</li>
+<li><p><strong>T</strong>ight Coupling</p>
+<ul>
+<li>Tight coupling occurs when the modules in your software are highly dependent upon one another. A symptom of this is if when making changes to one module you must make changes to another module. This makes modules difficult to reuse and test.</li>
+</ul>
+</li>
+<li><p><strong>U</strong>ntestability</p>
+<ul>
+<li>Testing should not be difficult. If it is, it is indicative of other issues like tight coupling.</li>
+</ul>
+</li>
+<li><p><strong>P</strong>remature Optimization</p>
+<ul>
+<li>Optimization is complex, making minor changes won’t help much and it will make code unreadable.</li>
+</ul>
+</li>
+<li><p><strong>I</strong>ndescriptive Naming</p>
+<ul>
+<li>Name things properly, make sure future you and others will be able to understand the names of your variables, classes, etc.</li>
+</ul>
+</li>
+<li><p><strong>D</strong>uplication</p>
+<ul>
+<li>Don’t repeat yourself. Repetitive code indicates refactoring is necessary.</li>
+</ul>
+</li>
 </ul>
 <p><strong>SOLID</strong></p>
 <ul>
-<li><strong>S</strong>ingle Responsibility Principle</li>
-<li><strong>O</strong>pen/Closed Principle</li>
-<li><strong>L</strong>iskov Substitution Principle</li>
-<li><strong>I</strong>nterface Segregation Principle</li>
-<li><strong>D</strong>ependency Inversion Principle</li>
+<li><p><strong>S</strong>ingle Responsibility Principle</p>
+<ul>
+<li>Every class should have a single responsibility. This design pattern helps produce highly modular and testable code.</li>
+</ul>
+</li>
+<li><p><strong>O</strong>pen/Closed Principle</p>
+<ul>
+<li>“software entities should be open for extension, but closed for modification”. Member variables should be private unless necessary and getters/setters should only be created when needed.</li>
+</ul>
+</li>
+<li><p><strong>L</strong>iskov Substitution Principle</p>
+<ul>
+<li>Objects should be replaceable with their subtypes.</li>
+</ul>
+</li>
+<li><p><strong>I</strong>nterface Segregation Principle</p>
+<ul>
+<li>Many specialized interfaces are better than one generalized interface. Reduces clutter and increases cohesion.</li>
+</ul>
+</li>
+<li><p><strong>D</strong>ependency Inversion Principle</p>
+<ul>
+<li>“Abstractions should not depend on details and details should depend on abstractions.”</li>
+</ul>
+</li>
 </ul>
 <p>I agree that the principles provided here act as good indicators for quality in object oriented programming, and I can recall instances where I have violated a couple of these principles, for instance the Liskov Substitution Principle which states that objects should be replaceable with their subtypes, and that when this is not possible in an implementation it should be rewritten not as a subclass, but as an interface.</p>
 <h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
