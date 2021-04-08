@@ -24,6 +24,10 @@ The second article I read gave a bit of an overview of containerization and why 
 
 I won't spend too many words reflecting on this article as I had hoped it would put more focus on the open source community and efforts behind container and orchestration software like Docker and Kubernetes, but it was an interesting article regardless as I use have used Docker in the past and I see a lot of potential in the microservices architecture that containerization both utilizes and promotes.
 
+### Conclusions
+
+I found both of these articles to be informative and I was especially intrigued by the first article, as it underscored the benefits and value I see in open source, and I would like to see this shift from closed to open source technologies become a trend in other places as well.
+
 ## References
 
 - [How a local government migrated to open source](https://opensource.com/article/20/8/linux-government)
