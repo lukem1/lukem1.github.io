@@ -10,6 +10,8 @@ The final chapter of Client Centered Software Development, Continuing the Journe
 
 This chapter provided me with a new perspective of many of the FOSS projects I use regularly from LibreOffice to VirtualBox and even Linux. I feel that these final stages of a CO-FOSS project are often undervalued, but as the text describes, are vital to the evolution of a CO-FOSS project into a mature FOSS community.
 
+The idea of establishing a democratic meritocracy for FOSS projects alone is worth a discussion of its own as I feel it is one of the most valuable parts of an open source project, and one of the most difficult parts to develop and maintain. It always amazes me how effectively the global FOSS community has coalesced around projects like Linux to work towards common goals and contribute to FOSS projects, often for nothing in return.
+
 I feel that the discussions in this chapter underscore the complexities of software engineering and highlight the value of the FOSS model which has provided the world with immeasurably valuable free and democratized projects like Linux. Overall I think it is quite fitting that these reflections will be one of the final blog posts I write for this course, especially after we have had the opportunity to interact and work with FOSS communities throughout this course and see the results of FOSS efforts in the real world.
 
 ## References
