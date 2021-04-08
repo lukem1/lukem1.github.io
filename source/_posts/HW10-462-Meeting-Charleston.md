@@ -18,6 +18,6 @@ In conclusion, I felt both of these events were extremely valuable experiences, 
 
 This will be the final post in my blog for CSCI 462, so I wanted to take a moment to acknowledge that fact and reflect a bit on how this semester has been and how my team and I have progressed through our work on the Zulip project.
 
-Prior to this semester I had not contributed to an open source project before, and I feel that the experience of becoming a contributor to Zulip has been the most valuable thing I have done in this class. Jumping in to an open source project I quite the learning experience, and from learning how to interact with the open source community to working on a popular and large project I have learned quite a lot about the software engineering process and the open source community, and I know my teammates feel similarly.
+Prior to this semester I had not contributed to an open source project before, and I feel that the experience of becoming a contributor to Zulip has been the most valuable thing I have done in this class. Jumping in to an open source project is quite the learning experience, and from learning how to interact with the open source community to working on a popular and large project I have learned quite a lot about the software engineering process and the open source community, and I know my teammates feel similarly.
 
 So this marks the end of my blog, I learned a lot throughout this class and I am looking forward to continuing to develop as a software engineer and contribute to even more open source projects in the future.
